@@ -411,7 +411,7 @@ const SCREENS = {
         <div class="section-title" style="--cat-color: var(--scan)">סמכות מאשרת</div>
         <div class="info-card">
           <ul class="bullet-list">
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>מפקד פלוגת חילוץ או לפי בקשת מהנדס ו/או קמ"ן ו/או קה"א.</div></li>
+            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>מפקד פלוגת חילוץ (דרישה להפעלת רחפן יכולה להגיע גם מקמ"ן, קה"א או מהנדס)</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div><strong>בישראל</strong> – יחידת בקרה אווירית דרומית/צפונית ע"פ גזרה</div></li>
           </ul>
         </div>
@@ -444,12 +444,28 @@ const SCREENS = {
         `)}
         ${accordion('2. חלוקת אתר', `<p class="fault-text">חלוקת האתר לגזרות סריקה והגדרת גבולות ברורים</p>`)}
         ${accordion('3. התאמת אמצעים', `<p class="fault-text">מצלמה מתאימה (תרמית, אופטית), רמקול ופנסים</p>`)}
-        ${accordion('4–8. המשך הכנות', `
+        <div class="accordion-item" style="cursor:default">
+          <div class="accordion-header" style="cursor:default">
+            <span class="accordion-title-text">4. בדיקת סוללות ברחפן ובשלט</span>
+          </div>
+        </div>
+        <div class="accordion-item" style="cursor:default">
+          <div class="accordion-header" style="cursor:default">
+            <span class="accordion-title-text">5. קבלת אישור הטסה מהגורמים המתאימים ומחמ"ל רמה ממונה (לרוב חמל פלוגה)</span>
+          </div>
+        </div>
+        <div class="accordion-item" style="cursor:default">
+          <div class="accordion-header" style="cursor:default">
+            <span class="accordion-title-text">6. בדיקת מזג אויר, תנאי ראות ותכסית במטרה לזהות מפגעים בזמן ההטסה</span>
+          </div>
+        </div>
+        <div class="accordion-item" style="cursor:default">
+          <div class="accordion-header" style="cursor:default">
+            <span class="accordion-title-text">7. ביצוע בד"ח מלא לפני הטסה</span>
+          </div>
+        </div>
+        ${accordion('8. תכנון מסלול', `
           <ul class="bullet-list">
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>בדיקת סוללות ברחפן ובשלט</div></li>
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>קבלת אישור הטסה מהגורמים המתאימים ומחמ"ל רמה ממונה (לרוב חמל פלוגה)</div></li>
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>בדיקת מזג אויר, תנאי ראות ותכסית במטרה לזהות מפגעים בזמן ההטסה</div></li>
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>ביצוע בד"ח מלא לפני הטסה</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>בחירת המשימה תתבצע בהתאם להוראת המפקד</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>מסלול הטיסה יהיה יעיל וחסכוני</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>בתכנון המסלול יש להתחשב בפעילות הכוחות ולנקוט אמצעי בטיחות על מנת לשמור עליהם ועל הרחפן ולצמצם הפרעה לעבודתם</div></li>
@@ -461,9 +477,9 @@ const SCREENS = {
         ${accordion('📸 תמונת מצב מהירה', `
           <p class="fault-text">מתבצע דבר ראשון בהגעה לאתר.</p>
           <p class="fault-text" style="margin-top:8px">תמונה מרחבית בגימבל 90 — "ארבעה מבטים" – 4 תמונות מ-4 פינות שטח האתר לכיוון מרכז האתר</p>
-          <p class="fault-text" style="margin-top:8px">לאחר איסוף לתמונת מצב מהירה יש להוריד את הרחפן, לפרוק למחשב ולהעביר את התוצרים לחמל רמ"מ.</p>
+          <p class="fault-text" style="margin-top:8px">לאחר איסוף לתמונת מצב מהירה יש להוריד את הרחפן, לפרוק למחשב ולהעביר את התוצרים לחפ"ק אחוד.</p>
         `)}
-        ${accordion('🗺️ איסוף לעזרים', `<p class="fault-text">הכנת מודל תלת מימד ותצ"א מרחבית - לטובת עזר שפה משותפת.</p>`)}
+        ${accordion('🗺️ איסוף לעזרים', `<p class="fault-text">הכנת תצ"א מרחבית - לטובת עזר שפה משותפת.</p>`)}
         ${accordion('📢 כריזה באמצעות מערכת כריזה', `
           <p class="fault-text">רלוונטי להעברת מסרים ולהדממות אתר - לפי הנחיית מפקד.</p>
           <p class="fault-text" style="margin-top:8px">יש לכוון את המערכת לכיוון מרכז האתר, רצוי שהרחפן ישהה בגובה מעל מרכז האתר</p>
@@ -473,14 +489,15 @@ const SCREENS = {
           </div>
         `)}
         ${accordion('💡 שיפור התאורה באתר בלילה', `
-          <p class="fault-text">לפי הנחיית מפקד. על מנת לא להפריע לכוחות ולהאיר בצורה יעילה - יש לשהות בגובה המתאים מעל מרכז האתר ולכווונן את הפנסים (באמצעות כיוון המצלמה) כלפי מטה (90 מעלות)</p>
+          <p class="fault-text">לפי הנחיית מפקד.</p>
+          <p class="fault-text" style="margin-top:8px">על מנת לא להפריע לכוחות ולהאיר בצורה יעילה - יש לשהות בגובה המתאים מעל מרכז האתר ולכווונן את הפנסים (באמצעות כיוון המצלמה) כלפי מטה (90 מעלות)</p>
         `)}
         ${accordion('📼 תיעוד לתחקור ולמידה ו/או דו"צ', `
           <p class="fault-text">יש לבצע תיעוד כל העת לטובת תחקור האירוע, למידה לאירוע הבא ולעיתים גם עבור מדיה שמתפרסמת בדובר צה"ל</p>
           <p class="fault-text" style="margin-top:8px">יש להקפיד על תיעוד מקצועי ויעיל</p>
         `)}
         ${accordion('📌 תיעוד וסימון בשטח', `
-          <p class="fault-text">כל הממצאים והמידע שנאספים במהלך הסריקות עם הרחפן מתועדים באופן מדוקדק ומעוברים למודיעין או כלוסייה.</p>
+          <p class="fault-text">כל הממצאים והמידע שנאספים במהלך הסריקות עם הרחפן מתועדים באופן מדוקדק ומעוברים למודיעין או אוכלוסייה.</p>
           <p class="fault-text" style="margin-top:8px">שימור ידע - יש לנהל תיקיית תוצרים עבור כל מבנה, בתוכה תיעוד הסריקה עבור כל גזרה – תמונות סטילס + וידאו</p>
         `)}
       </div>
@@ -488,7 +505,7 @@ const SCREENS = {
         <div class="section-title" style="--cat-color: var(--scan)">סיום</div>
         <div class="info-card">
           <ul class="bullet-list">
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>יש לדווח אודות הממצאים למפקד ולמודיעין או כלוסייה דרך חמ"ל הפלוגה.</div></li>
+            <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>יש לדווח אודות הממצאים למפקד ולמודיעין או אוכלוסייה דרך חמ"ל הפלוגה.</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--scan)"></div><div>יש לדווח לחמ"ל רמה ממונה על סיום משימה והורדת רחפן</div></li>
           </ul>
         </div>
@@ -607,6 +624,16 @@ const SCREENS = {
           <div class="phone-item"><span class="phone-label">תשלס פצ"ן</span><span class="phone-number">02-5305102</span></div>
           <div class="phone-item"><span class="phone-label">תשלס פקמ"ז</span><span class="phone-number">03-6067970</span></div>
         </div>
+        <div class="section-title" style="--cat-color: var(--safety); margin-top: 18px;">⚠️ תיאומים</div>
+        <div class="warning-card">
+          <div class="warning-icon">⚠️</div>
+          <div style="flex:1">
+            <ul class="bullet-list" style="margin:0">
+              <li class="bullet-item" style="border-bottom:1px solid rgba(220,38,38,0.15)"><div class="bullet-dot" style="background:var(--safety)"></div><div class="warning-text">יש לתאם כל הרמת רחפן גם מול רשות מקומית</div></li>
+              <li class="bullet-item"><div class="bullet-dot" style="background:var(--safety)"></div><div class="warning-text">בארץ – לחפש גורם משטרה באתר ההרס ולתאם מולו הרמת רחפן. אי תיאום יכול להוביל לייירוט הרחפן</div></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="section-block" style="animation-delay:0.1s">
         <div class="section-title" style="--cat-color: var(--appendix)">רשימת ציוד — ערכת EVO</div>
@@ -624,12 +651,6 @@ const SCREENS = {
       </div>
       <div class="section-block" style="animation-delay:0.15s">
         <div class="section-title" style="--cat-color: var(--appendix)">נתוני טיסה יבשים</div>
-        <div class="spec-grid">
-          <div class="spec-item"><span class="spec-value">35 דק׳</span><span class="spec-label">זמן שהייה מקסימלי</span></div>
-          <div class="spec-item"><span class="spec-value">72 קמ"ש</span><span class="spec-label">מהירות מרבית</span></div>
-          <div class="spec-item"><span class="spec-value">8 בופור</span><span class="spec-label">עמידות לרוח</span></div>
-          <div class="spec-item"><span class="spec-value">7,000 מ׳</span><span class="spec-label">תקרה מבצעית</span></div>
-        </div>
         <div class="info-card">
           <div class="fault-section-title">זמן שהייה</div>
           <p class="fault-text">עד 35 דקות טיסה במתאר מבצעי</p>
@@ -645,13 +666,6 @@ const SCREENS = {
         <div class="section-title" style="--cat-color: var(--appendix)">יכולות</div>
         ${accordion('👁️ כיסוי מרחבי', `<p class="fault-text">לרחפן מערך חיישני ראייה בינוקולריים המגובים ב-2 חיישני אולטרסאונד.</p>`)}
         ${accordion('🗺️ מיפוי מכשולים', `<p class="fault-text">בניית מפה תלת-ממדית בזמן אמת של סביבת הכלי ברדיוס של עד 30 מטרים.</p>`)}
-      </div>
-      <div class="section-block" style="animation-delay:0.25s">
-        <div class="section-title" style="--cat-color: var(--safety)">⚠️ תיאום עם רשות מקומית</div>
-        <div class="warning-card">
-          <div class="warning-icon">⚠️</div>
-          <div class="warning-text">יש לתאם כל הרמת רחפן גם מול רשות מקומית: בארץ – לחפש גורם משטרה באתר ההרס ולתאם מולו הרמת רחפן. אי תיאום יכול להוביל לייירוט הרחפן</div>
-        </div>
       </div>
     `
   },
@@ -714,7 +728,7 @@ const SCREENS = {
           <p class="fault-text">הוידאו מהרחפן הופך להיות אפור או תקוע על תמונה, הטלמטריה עדיין זזה.</p>
           <div class="fault-section-title">תגובת המטיס</div>
           <ul class="bullet-list">
-            <li class="bullet-item"><div class="bullet-dot" style="background:var(--fault)"></div><div>מעבר בין מצלמות יום\לילה\תרמי</div></li>
+            <li class="bullet-item"><div class="bullet-dot" style="background:var(--fault)"></div><div>מעבר בין מצלמות יום/לילה/תרמי</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--fault)"></div><div>הזזת זום במצלמת היום וניסיון למעבר לעדשת זום\רחבה.</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--fault)"></div><div>אם הוידאו עדיין תקוע חזרה לפי טלמטריה עד לנקודת הנחיתה, נחיתה בקשר עין,</div></li>
             <li class="bullet-item"><div class="bullet-dot" style="background:var(--fault)"></div><div>אם יש צורך והמקום מאפשר מבצעית יציאה ממצב חשאי לזיהוי טוב יותר של הרחפן.</div></li>
